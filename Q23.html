@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q23 Shivansh</title>
+    <style>
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            margin: 100px auto;
+        }
+        .carousel img {
+        width: 400px;
+        height: 400px;
+        }
+        button{
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            padding : 1rem;
+            margin: 2rem;
+            border: 0;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <button id="prev">Previous</button>
+        <img id="image" src="carpenter1.jpg">
+        <button id="next">Next</button>
+    </div>
+
+    <script>
+        const image = document.getElementById('image');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+        const images = ['carpenter1.jpg','carpenter2.jpg','carpenter3.jpg','carpenter4.jpg'];
+        let currentIdx = 0;
+        prev.addEventListener('click',()=>{
+            currentIdx = (currentIdx -1 + images.length) % images.length;
+            image.src =images[currentIdx];
+        }) 
+        next.addEventListener('click',()=>{
+            currentIdx = (currentIdx+1) % images.length;
+            image.src = images[currentIdx];
+        })
+            
+    </script>
+</body>
+</html>
