@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7 Shivansh</title>
+</head>
+<body>
+    <h1 style="color: red;" align="center">Employee Registration Form</h1>
+
+<form action="" method="post">
+    <table border="0" align="center" cellspacing="10">
+    <tr>
+    <td style="font-size: 20px;" colspan="2" align="center">
+        <b>
+        <input type="radio" id="mr" name="title" value="HTML">
+        <label for="html">Mr.</label>
+        <input type="radio" id="mrs" name="title" value="HTML">
+        <label for="html">Mrs.</label>
+        <input type="radio" id="mr" name="title" value="HTML">
+        <label for="html">Ms.</label>
+        </b>
+    </tr>
+
+<tr>
+<td ><label for="id" style="font-size: 20px;" >First Name </label></td>
+ <td><input id="id" maxlength="50" name="name" type="text"/></td>
+</tr>
+
+<tr> 
+<td><label for="lname" style="font-size: 20px;">Last Name</label></td>
+ <td> <input type="text" id="lname" name="lname"></tr>
+</tr>
+
+<tr> 
+<td style="font-size: 20px;" ><label for="email">Mail Address 1</label></td>
+  <td><input type="text" id="email" name="email"></td>
+</tr> 
+
+<tr> 
+<td style="font-size: 20px;" ><label for="email">Mail Address 2</label></td>
+  <td><input type="text" id="email" name="email"></td>
+</tr> 
+
+<tr> 
+<td ><label for="city" style="font-size: 20px;">City</label></td>
+ <td> <input type="text" id="city" name="city">
+</tr>
+<tr>
+    <td><label for="state" style="font-size: 20px;">State </label></td>
+    <td><select name="state" id="state">
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Kerela">Kerela</option>
+        <option value="Chattisgarh">Chattisgarh</option>
+    </select></td>
+</tr>
+<tr>
+    <td><label for="zip" style="font-size: 20px;">Zip</label></td>
+    <td> <input type="number" id="zip" name="zip"></td>
+</tr>
+<tr>
+    <td><label for="photo" style="font-size: 20px;">Upload Photo</label></td>
+    <td> <input type="file" id="zip" name="zip"></td>
+</tr>
+<tr>
+    <td><label for="e-mail" style="font-size: 20px;">E-mail</label></td>
+    <td> <input type="email" id="e-mail" name="e-mail"></td>
+</tr>
+<tr> 
+<td style="font-size: 20px;" ><label for="phone">Mobile</label></td>
+  <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="+91"></td>
+</tr>
+<tr>
+    <td><label for="languages" style="font-size: 20px;">Languages Known</label></td>
+    <td> 
+        <label>
+            <input type="checkbox" name="languages" value="Gujrati"> Gujrati
+          </label><br>
+          <label>
+            <input type="checkbox" name="languages" value="Hindi"> Hindi
+          </label><br>
+          <label>
+            <input type="checkbox" name="languages" value="English"> English
+          </label><br>
+          <label>
+            <input type="checkbox" name="languages" value="Marathi"> Marathi
+          </label><br>
+    </td>
+</tr>
+<tr>
+    <td><label for="addInfo" style="font-size: 20px;">Additional Information</label></td>
+    <td> <textarea name="addInfo" id="addInfo" rows="4"></textarea></td>
+</tr>
+<tr>
+    <td></td>
+    <td><input type="submit" value="Submit">
+    <input type="reset" value="Reset"></td>
+</tr>
+
+</form>
+
+</body>
+</html>
