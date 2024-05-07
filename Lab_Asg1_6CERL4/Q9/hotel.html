@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Tourism & Travels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="logo">SD Tourism & Travels</div>
+    <div class="navbar">
+        <a href="index.html" class="link">Home</a>
+        <a href="heritage.html" class="link">Heritage</a>
+        <a href="hotel.html" class="link" style="border-bottom: 2px solid white;">Hotel Booking</a>
+        <a href="gallery.html" class="link">Gallery</a>
+    </div>
+
+</header>
+<div class="bg-img">
+    <form action="" class="container">
+        <h1 align="center">Hotel Booking</h1>
+        <br>
+
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required />
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter E-mail" name="email" required />
+
+        <label for="phone"><b>Phone</b></label>
+        <input type="tel" placeholder="Enter Phone no" id="phone" name="phone" required />
+
+        <label for="location"><b>Location</b></label>
+        <select id="location" name="location" required>
+            <option value="" disabled selected>Select a Location</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Agra">Agra</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Madhaya Pradesh">Madhaya Pradesh</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Karnataka">Karnataka</option>
+        </select>
+        <div style="display: flex; gap: 1rem;">
+        <div >
+            <label for="sdate"><b>Start Date</b></label>
+            <input type="date" placeholder="Start Date" id="sdate" name="sdate" required />
+        </div>
+        <div style="width: 50%;">
+            <label for="edate"><b>End Date</b></label>
+            <input type="date" placeholder="End Date" id="edate" name="edate" required />
+        </div>
+    </div>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+</body>
+</html>

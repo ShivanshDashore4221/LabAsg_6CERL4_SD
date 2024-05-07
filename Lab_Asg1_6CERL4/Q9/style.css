@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+header{
+    padding: 1.5rem ;
+    background-color: rgb(238, 141, 15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-weight: bold;
+    font-size: 2rem;
+    /* color: white; */
+}
+.logo:hover{
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
+}
+.navbar{
+    display: flex;
+    gap:1.3rem;
+    font-size: 1.2rem;
+    padding-right: 2em;
+}
+
+.navbar>a{
+    padding-bottom: 5px;
+}
+.navbar>a:hover{
+    border-bottom: 2px solid white;
+}
+.image{
+    position: relative;
+}
+.image>img{
+    position: absolute;
+    filter: brightness(80%);
+}
+.img-content{
+    position: absolute;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 0px 0px 10px black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    
+}
+  * {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    background-image: url('images/hotelGormpg2.jpg');
+    background-size: cover;
+    height: 95vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.container {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    margin: 20px;
+    max-width: 35%;
+    padding: 1.5rem;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 1.5rem;
+}
+
+
+input,select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 1rem;
+}
+
+input,select:focus {
+    /* background-color: #ddd; */
+    outline: none;
+}
+.btn {
+    background-color: #04AA6D;
+    font-size: 1.1rem;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.85;
+}
+
+.btn:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 10px #04AA6D;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 1px black;
+    transition: all 0.1s ease-in-out;
+}
+.heading{
+    font-size: 3rem;
+    margin: 20px;
+    text-align: center;
+}
+.photo-list{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.photo-list>img{
+    height: 300px;
+    width: 300px;
+}
+.photo-list>img:hover{
+    box-shadow: 0px 0px 15px black;
+}
