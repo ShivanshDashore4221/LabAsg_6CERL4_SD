@@ -120,10 +120,32 @@ input,select:focus {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.photo-list>img{
+.photo-list>img, .photo-list>a>img{
     height: 300px;
     width: 300px;
 }
-.photo-list>img:hover{
+.photo-list>img:hover, .photo-list>a:hover{ 
     box-shadow: 0px 0px 15px black;
+}
+.box-content{
+    /* background-color:rgba(238, 141, 15, 0.635); */
+    background-color:rgba(28, 206, 28, 0.662);
+    /* color: white; */
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 20px;
+    /* height: 300px; */
+    font-size: 1.5rem;
+
+}
+.site-content{
+    background-color:rgba(28, 206, 28, 0.662);
+    /* color: white; */
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 20px;
+    /* height: 300px; */
+    font-size: 1.5rem;
 }
